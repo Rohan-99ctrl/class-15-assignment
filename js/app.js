@@ -49,9 +49,35 @@ setInterval(function(){
 }, 1000);
 
 
+// ================================
+
+
+const hours2 = document.querySelector('.hours2');
+const minute2 = document.querySelector('.minute2');
+const second2 = document.querySelector('.second2');
+
+
+setInterval(function(){
+
+    let time2 = new Date();
+    let currentHour2 = time2.getHours();
+    let currentMin2 = time2.getMinutes();
+    let currentSec2 = time2.getSeconds();
+
+    hours2.style.transform = `rotate(${clockCal(currentHour2, 12)}deg)`;
+    minute2.style.transform = `rotate(${clockCal(currentMin2, 60)}deg)`;
+    second2.style.transform = `rotate(${clockCal(currentSec2, 60)}deg)`;
+
+}, 1000);
+
+
 
 // calculator
 
+
+const topScreen = document.querySelector('.topScreen');
+const bottomScreen = document.querySelector('.bottomScreen');
+let calculatorData = [];
 
 
 

@@ -112,6 +112,83 @@ div.hours::before{
 }
 
 
+/* =============================== */
+
+
+div.clockWrapper2{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: url(../img/clockFace.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 117%;
+    margin: 30px auto;
+    border: 15px solid #3B1E03;
+    box-shadow: 0px 0px 20px 13px #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+div.clockWrapper2::before{
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    z-index: 100;
+}
+
+div.second2{
+    height: 287px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+}
+
+div.second2::before{
+    content: '';
+    width: 4px;
+    height: 180px;
+    background-color: red;
+    position: absolute;
+}
+
+div.minute2{
+    height: 244px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+}
+
+div.minute2::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 123px;
+    background:white
+}
+
+div.hours2{
+    height: 204px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+}
+
+div.hours2::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 102px;
+    background:whitesmoke;
+}
+
+
 
 /* calculator design */
 

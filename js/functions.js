@@ -11,10 +11,6 @@ let clockCal = (currentTime, clockCalVal) => {
 // calculator function
 
 
-const topScreen = document.querySelector('.topScreen');
-const bottomScreen = document.querySelector('.bottomScreen');
-let calculatorData = [];
-
 let valueGet = (calData) => {
 
     calculatorData.push(calData);
