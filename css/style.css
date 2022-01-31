@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Instant Data form checkbox */
+
+
+div.mainSection{
+    padding: 80px 0px;
+}
+
+div#wrapper{
+    border-left: 7px solid orangered;
+    border-right: 7px solid orangered;
+    border-radius: 13px;
+}
+
+label{
+    padding-left: 11px;
+}
+
+
+/* clock design */
+
+h1{
+    padding-bottom: 35px;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div.clockWrapper{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: url(../img/clockFace3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 117%;
+    margin: 30px auto;
+    border: 15px solid #3B1E03;
+    box-shadow: 0px 0px 20px 13px #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+div.clockWrapper::before{
+    content: '';
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+div.second{
+    height: 287px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+}
+
+div.second::before{
+    content: '';
+    width: 4px;
+    height: 180px;
+    background-color: red;
+    position: absolute;
+}
+
+div.minute{
+    height: 244px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+}
+
+div.minute::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 123px;
+    background-image: url(../img/kata2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+div.hours{
+    height: 204px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+}
+
+div.hours::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 102px;
+    background-image: url(../img/kata1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+
+/* calculator design */
+
+div.mainCalWrapper{
+    padding: 80px 0px;
+    background: #FFB178;
+}
+
+div.calWrapper{
+    background: #243441;
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: -2px 2px 11px 3px #050708;
+}
+
+div.display{
+    height: 180px;
+    padding: 20px 40px;
+    padding-top: 40px;
+    text-align: right;
+}
+
+div.buttonBlock{
+    padding: 40px;
+    overflow: hidden;
+}
+
+div.topScreen{
+    height: 50px;
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    overflow: hidden;
+}
+div.bottomScreen{
+    height: 90px;
+    font-size: 55px;
+    color: white;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+button{
+    background: #243441;
+    outline: none;
+    border: none;
+    width: 65px;
+    height: 55px;
+    box-shadow: -2px 2px 11px 3px #050708;
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    padding: 9px 0px;
+    font-weight: 700;
+}
+
+button:active{
+    background: #000000;
+}
+
+button:nth-child(4){
+    margin-right: 0px;
+}
+button:nth-child(8){
+    margin-right: 0px;
+}
+button:nth-child(12){
+    margin-right: 0px;
+}
+button:nth-child(16){
+    margin-right: 0px;
+}
+button:nth-child(17){
+    margin-bottom: 0px;
+}
+button:nth-child(18){
+    margin-bottom: 0px;
+}
+button:nth-child(19){
+    margin-right: 0px;
+    width: 150px;
+    background: #EC802E;
+    padding: 0px;
+    margin-bottom: 0px;
+    font-size: 31px;
+}
+button:nth-child(19):active{
+    background: #704402;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 15 Assignment</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+
+
+
+    <div class="mainSection">
+        <div class="container">
+            <h1 class="text-center">Instant Data form checkbox</h1>
+            <div class="row">
+                <div id="wrapper" class="col-md-6 m-auto shadow my-3 py-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="checkbox" class="skill" value="PHP" id="PHP"><label for="PHP"> PHP</label> 
+                            <br>
+                            <input type="checkbox" class="skill" value="WordPress" id="WordPress"><label for="WordPress"> WordPress</label> <br>
+                            <input type="checkbox" class="skill" value="Python" id="Python"><label for="Python"> Python</label>
+                            <br>
+                            <input type="checkbox" class="skill" value="Android" id="Android"><label for="Android"> Android</label>
+                            <br>
+                            <input type="checkbox" class="skill" value="Golang" id="Golang"><label for="Golang"> Golang</label>
+                            <br>
+                            <input type="checkbox" class="skill" value="IOS" id="IOS"><label for="IOS"> IOS</label>
+                            <br>
+                            <input type="checkbox" class="skill" value="Blockchain" id="Blockchain"><label for="Blockchain"> Blockchain</label>
+                            <br>
+                            <input type="checkbox" class="skill" value="Laravel" id="Laravel"><label for="Laravel"> Laravel</label>
+    
+                            <ul class="list-group uploadItems mt-3">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="padding: 70px 0px;background-color: rgb(219, 235, 250);" class="mainClockWrapper">
+        <h1 class="text-center">Analog Clock</h1>
+        <div class="container">
+            <div class="clockWrapper">
+                <div class="hours"></div>
+                <div class="minute"></div>
+                <div class="second"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- calculator -->
+
+
+
+    <div class="mainCalWrapper">
+        <div class="container">
+            <div class="calWrapper">
+                <div class="display">
+                    <div class="topScreen">0</div>
+                    <div class="bottomScreen"></div>
+                </div>
+
+                <div class="buttonBlock">
+                    <button onclick="allClear()" style="color: #FFB177;">AC</button>
+                    <button onclick="clearValue()" style="color: #FFB177;">C</button>
+                    <button onclick="valueGet('%')" style="color: #FFB177;">%</button>
+                    <button onclick="valueGet('/')" style="color: #FFB177;">/</button>
+
+                    <button  onclick="valueGet(7)">7</button>
+                    <button  onclick="valueGet(8)">8</button>
+                    <button  onclick="valueGet(9)">9</button>
+                    <button  onclick="valueGet('*')" style="color: #FFB177;">*</button>
+
+                    <button  onclick="valueGet(4)">4</button>
+                    <button  onclick="valueGet(5)">5</button>
+                    <button  onclick="valueGet(6)">6</button>
+                    <button  onclick="valueGet('-')" style="color: #FFB177;">-</button>
+
+                    <button onclick="valueGet(1)">1</button>
+                    <button onclick="valueGet(2)">2</button>
+                    <button onclick="valueGet(3)">3</button>
+                    <button onclick="valueGet('+')" style="color: #FFB177;">+</button>
+                    
+                    <button onclick="valueGet(0)">0</button>
+                    <button onclick="valueGet('.')">.</button>
+                    <button onclick="finalRes()" style="color:white;">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/functions.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
